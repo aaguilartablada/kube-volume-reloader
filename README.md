@@ -11,7 +11,7 @@ The default name for the annotation is 'kube-volume-reloader', but it can be cha
 
 ## Format
 
-The value for the annotation is a comma-separated list of deployments, statefulsets and/or daemonsets to be restarted. Each has to be indicated in the format '<kind>/<name>'. For example, let's suppose we want to restart the deployment 'my-app' and the statefulset 'my-db' when the secret 'my-secret' changes:
+The value for the annotation is a comma-separated list of deployments, statefulsets and/or daemonsets to be restarted. Each has to be indicated in the format 'kind/name'. For example, let's suppose we want to restart the deployment 'my-app' and the statefulset 'my-db' when the secret 'my-secret' changes:
 
 ```yaml
 apiVersion: v1
